@@ -10,9 +10,9 @@ const MemoizedComponentInitial = () => {
     console.log('Renderizando MemoizedComponentInitial');
 
     return (
-        <div>
-            <p>Valor interno: {value}</p>
-            <button onClick={incrementValue}>Incrementar valor interno</button>
+        <div className="example-container">
+            <p className="example-description">Valor interno: {value}</p>
+            <button className="example-button" onClick={incrementValue}>Incrementar valor interno</button>
         </div>
     );
 };

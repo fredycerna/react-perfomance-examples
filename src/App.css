@@ -1,38 +1,113 @@
-.App {
+/* App.css */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #f0f0f0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container {
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style-type: none; /* Quitar bullets */
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link,
+.subnav-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.subnav-link:hover {
+  color: #0056b3;
+}
+
+.subnav-list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-item:hover .subnav-list {
+  display: block;
+}
+
+.subnav-item {
+  margin: 5px 0;
+}
+
+.subnav-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilos para los ejemplos */
+.example-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.example-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.example-description {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.example-code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.example-output {
+  margin-top: 20px;
+}
+
+.example-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.example-button:hover {
+  background-color: #0056b3;
 }
