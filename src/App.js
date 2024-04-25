@@ -35,12 +35,12 @@ const App = () => {
             </ul>
           </nav>
           <Routes>
-            <Route path="/memo-initial" component={MemoExampleInitial} />
-            <Route path="/memo-final" component={MemoExampleFinal} />
-            <Route path="/useMemo-initial" component={UseMemoExampleInitial} />
-            <Route path="/useMemo-final" component={UseMemoExampleFinal} />
-            <Route path="/useCallback-initial" component={UseCallbackExampleInitial} />
-            <Route path="/useCallback-final" component={UseCallbackExampleFinal} />
+            <Route path="/memo-initial" element={<MemoExampleInitial/>} />
+            <Route path="/memo-final" element={<MemoExampleFinal/>} />
+            <Route path="/useMemo-initial" element={<UseMemoExampleInitial/>} />
+            <Route path="/useMemo-final" element={<UseMemoExampleFinal/>} />
+            <Route path="/useCallback-initial" element={<UseCallbackExampleInitial/>} />
+            <Route path="/useCallback-final" element={<UseCallbackExampleFinal/>} />
           </Routes>
         </div>
       </Router>
