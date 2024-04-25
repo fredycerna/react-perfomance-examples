@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import TaskList from './TaskList';
+import './../../App.css';
 
 const UseCallbackExampleFinal = () => {
     const [tasks, setTasks] = useState([
@@ -13,8 +14,8 @@ const UseCallbackExampleFinal = () => {
     }, []);
 
     return (
-        <div>
-            <h2>Lista de Tareas - Ejemplo Final</h2>
+        <div className="example-container">
+            <h2 className="example-title">useCallback - Ejemplo Final</h2>
             <TaskList tasks={tasks} onDelete={handleDelete} />
         </div>
     );

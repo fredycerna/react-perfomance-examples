@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './UseMemoExample.css';
 
 const ExpensiveCalculation = () => {
     console.log('Realizando cálculo costoso');
@@ -12,11 +13,11 @@ const UseMemoExampleInitial = () => {
     const result = ExpensiveCalculation();
 
     return (
-        <div>
-            <h2>Uso de useMemo - Ejemplo Inicial</h2>
-            <p>Resultado: {result}</p>
-            <p>Counter:{count} </p>
-            <button onClick={() => setCount(count + 1)}>Incrementar</button>
+        <div className="example-container">
+            <h2 className="example-title">useMemo - Ejemplo Inicial</h2>
+            <p className="example-description">Resultado: {result}</p>
+            <p className="example-description">Counter: {count}</p>
+            <button className="example-button" onClick={() => setCount(count + 1)}>Incrementar</button>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TaskList from './TaskList';
+import './../../App.css';
 
 const UseCallbackExampleInitial = () => {
     const [tasks, setTasks] = useState([
@@ -9,13 +10,13 @@ const UseCallbackExampleInitial = () => {
     ]);
 
     const handleDelete = (taskId) => {
-         console.warn("Manejador de eliminación ejecutado");
+        console.warn("Manejador de eliminación ejecutado");
         setTasks(tasks.filter(task => task.id !== taskId));
     };
 
     return (
-        <div>
-            <h2>Lista de Tareas - Ejemplo Inicial</h2>
+        <div className="example-container">
+            <h2 className="example-title">useCallback - Ejemplo Inicial</h2>
             <TaskList tasks={tasks} onDelete={handleDelete} />
         </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
+import './UseCallback.css';
 
-const TaskItem = React.memo(({ task, onDelete }) => {
+const TaskItem = ({ task, onDelete }) => {
     const handleDelete = () => {
         onDelete(task.id);
     };
@@ -8,11 +9,11 @@ const TaskItem = React.memo(({ task, onDelete }) => {
     console.log("Renderizando TaskItem - Tarea: ", task.id);
 
     return (
-        <li>
+        <li className="task-item">
             <span>{task.title}</span>
-            <button onClick={handleDelete}>Eliminar</button>
+            <button className="delete-button" onClick={handleDelete}>Eliminar</button>
         </li>
     );
-});
+};
 
 export default TaskItem;
