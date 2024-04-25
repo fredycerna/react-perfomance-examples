@@ -1,45 +1,44 @@
-# Ejemplos de Mejora de Rendimiento en React
+# React Performance Optimization Examples
 
-Este proyecto proporciona ejemplos de cómo mejorar el rendimiento de una aplicación React utilizando las siguientes técnicas:
+This project provides examples of how to improve the performance of a React application using the following techniques:
 
-- `React.memo`: para evitar el renderizado innecesario de componentes funcionales.
-- `useMemo`: para memoizar el resultado de cálculos costosos.
-- `useCallback`: para memoizar funciones y evitar la recreación innecesaria de las mismas.
+- `React.memo`: to prevent unnecessary rendering of functional components.
+- `useMemo`: to memoize the result of expensive calculations.
+- `useCallback`: to memoize functions and avoid unnecessary re-creation of them.
 
-## Ejemplos disponibles
+## Available Examples
 
-- **Memo**: Ejemplos de optimización utilizando `React.memo`.
-    - Estado inicial.
-    - Estado final.
-- **UseMemo**: Ejemplos de optimización utilizando `useMemo`.
-    - Estado inicial.
-    - Estado final.
-- **UseCallback**: Ejemplos de optimización utilizando `useCallback`.
-    - Estado inicial.
-    - Estado final.
+- **Memo**: Optimization examples using `React.memo`.
+  - Initial state.
+  - Final state.
+- **UseMemo**: Optimization examples using `useMemo`.
+  - Initial state.
+  - Final state.
+- **UseCallback**: Optimization examples using `useCallback`.
+  - Initial state.
+  - Final state.
 
-## Cómo ejecutar los ejemplos
+## How to Run Examples
 
-1. Clona este repositorio en tu máquina local.
-2. Navega hasta el directorio del proyecto.
-3. Instala las dependencias utilizando `npm install` o `yarn install`.
-4. Ejecuta la aplicación utilizando `npm start` o `yarn start`.
-5. Abre tu navegador y visita `http://localhost:3000` para ver los ejemplos.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install` or `yarn install`.
+4. Run the application using `npm start` or `yarn start`.
+5. Open your browser and visit `http://localhost:3000` to view the examples.
 
-## Cómo utilizar los ejemplos
+## How to Use Examples
 
-- Navega a través de los ejemplos utilizando la barra de navegación.
-- Cada ejemplo consta de un estado inicial y un estado final, mostrando la implementación antes y después de aplicar la técnica de optimización correspondiente.
+- Navigate through the examples using the navigation bar.
+- Each example consists of an initial state and a final state, showing the implementation before and after applying the corresponding optimization technique.
 
-## Contribuciones
+## Contributions
 
-¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes alguna mejora que sugerir, no dudes en abrir un issue o enviar un pull request.
+Contributions are welcome! If you find any issues or have any improvements to suggest, feel free to open an issue or submit a pull request.
 
-## Autor
+## Contact
 
-Fredy Cerna
-Correo electrónico: fredycerna@gmail.com
+For any inquiries or feedback, please contact fredycerna@gmail.com.
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
