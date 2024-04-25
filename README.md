@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Ejemplos de Mejora de Rendimiento en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto proporciona ejemplos de cómo mejorar el rendimiento de una aplicación React utilizando las siguientes técnicas:
 
-## Available Scripts
+- `React.memo`: para evitar el renderizado innecesario de componentes funcionales.
+- `useMemo`: para memoizar el resultado de cálculos costosos.
+- `useCallback`: para memoizar funciones y evitar la recreación innecesaria de las mismas.
 
-In the project directory, you can run:
+## Ejemplos disponibles
 
-### `npm start`
+- **Memo**: Ejemplos de optimización utilizando `React.memo`.
+    - Estado inicial.
+    - Estado final.
+- **UseMemo**: Ejemplos de optimización utilizando `useMemo`.
+    - Estado inicial.
+    - Estado final.
+- **UseCallback**: Ejemplos de optimización utilizando `useCallback`.
+    - Estado inicial.
+    - Estado final.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cómo ejecutar los ejemplos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta el directorio del proyecto.
+3. Instala las dependencias utilizando `npm install` o `yarn install`.
+4. Ejecuta la aplicación utilizando `npm start` o `yarn start`.
+5. Abre tu navegador y visita `http://localhost:3000` para ver los ejemplos.
 
-### `npm test`
+## Cómo utilizar los ejemplos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navega a través de los ejemplos utilizando la barra de navegación.
+- Cada ejemplo consta de un estado inicial y un estado final, mostrando la implementación antes y después de aplicar la técnica de optimización correspondiente.
 
-### `npm run build`
+## Contribuciones
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes alguna mejora que sugerir, no dudes en abrir un issue o enviar un pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Autor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fredy Cerna
+Correo electrónico: fredycerna@gmail.com
 
-### `npm run eject`
+## Licencia
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia [MIT](https://opensource.org/licenses/MIT).
