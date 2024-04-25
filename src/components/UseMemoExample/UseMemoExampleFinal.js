@@ -15,6 +15,7 @@ const UseMemoExampleFinal = () => {
         <div>
             <h2>Uso de useMemo - Ejemplo Final</h2>
             <p>Resultado: {result}</p>
+            <p>Counter:{count} </p>
             <button onClick={() => setCount(count + 1)}>Incrementar</button>
         </div>
     );

@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
+import TaskList from './TaskList';
 
 const UseCallbackExampleInitial = () => {
-    const [count, setCount] = useState(0);
+    const [tasks, setTasks] = useState([
+        { id: 1, title: 'Tarea 1' },
+        { id: 2, title: 'Tarea 2' },
+        { id: 3, title: 'Tarea 3' }
+    ]);
 
-    const handleClick = () => {
-        console.log('Manejador de clics ejecutado');
-        setCount(count + 1);
+    const handleDelete = (taskId) => {
+         console.warn("Manejador de eliminación ejecutado");
+        setTasks(tasks.filter(task => task.id !== taskId));
     };
 
     return (
         <div>
-            <h2>Uso de useCallback - Ejemplo Inicial</h2>
-            <p>Contador: {count}</p>
-            <button onClick={handleClick}>Incrementar</button>
+            <h2>Lista de Tareas - Ejemplo Inicial</h2>
+            <TaskList tasks={tasks} onDelete={handleDelete} />
         </div>
     );
 };
