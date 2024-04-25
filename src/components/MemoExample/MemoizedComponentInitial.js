@@ -7,6 +7,8 @@ const MemoizedComponentInitial = () => {
         setValue(value + 1);
     };
 
+    console.log('Renderizando MemoizedComponentInitial');
+
     return (
         <div>
             <p>Valor interno: {value}</p>

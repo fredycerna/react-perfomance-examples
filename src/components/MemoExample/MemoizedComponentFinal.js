@@ -7,6 +7,8 @@ const MemoizedComponentFinal = React.memo(() => {
         setValue(value + 1);
     };
 
+    console.log('Renderizando MemoizedComponentFinal');
+
     return (
         <div>
             <p>Valor interno: {value}</p>

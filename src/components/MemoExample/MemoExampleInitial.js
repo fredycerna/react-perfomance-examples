@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MemoizedComponentFinal from './MemoizedComponentInitial';
+import MemoizedComponentInitial from './MemoizedComponentInitial';
 
-const MemoExampleFinal = () => {
+const MemoExampleInitial = () => {
     const [count, setCount] = useState(0);
 
     return (
@@ -9,9 +9,9 @@ const MemoExampleFinal = () => {
             <h2>Uso de memo - Ejemplo Inicial</h2>
             <p>Contador: {count}</p>
             <button onClick={() => setCount(count + 1)}>Incrementar contador</button>
-            <MemoizedComponentFinal />
+            <MemoizedComponentInitial />
         </div>
     );
 };
 
-export default MemoExampleFinal;
+export default MemoExampleInitial;
